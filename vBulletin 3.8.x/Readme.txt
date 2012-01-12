@@ -1,0 +1,3 @@
+- copy files inside upload directory to the forums root
+- upload product-envolve_chat_3.8.x.xml file from manage product (admincp)
+- update settings according to your need.

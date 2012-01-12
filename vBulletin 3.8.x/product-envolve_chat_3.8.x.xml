@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<product productid="envolve_chat" active="1">
+	<title>Envolve Chat</title>
+	<description>Adds the Envolve Chat Toolbar</description>
+	<version>1.0</version>
+	<url>http://www.envolve.com</url>
+	<versioncheckurl>http://www.envolve.com/plugins/vBulletin/versioncheck.php</versioncheckurl>
+	<dependencies>
+	</dependencies>
+	<codes>
+	</codes>
+	<templates>
+	</templates>
+	<plugins>
+		<plugin active="1" executionorder="15">
+			<title>Add Envolve JS to Footer</title>
+			<hookname>parse_templates</hookname>
+			<phpcode><![CDATA[require(DIR . '/includes/plugins/parse_templates.php');]]></phpcode>
+		</plugin>
+	</plugins>
+	<phrases>
+		<phrasetype name="vBulletin Settings" fieldname="vbsettings">
+			<phrase name="setting_envolve_admin_desc" date="1308378911" username="admin" version="1.0"><![CDATA[Provide usergroupid that you want to make admin on Envolve chat. e.g 2,6,7]]></phrase>
+			<phrase name="setting_envolve_admin_title" date="1308378911" username="admin" version="1.0"><![CDATA[Envolve Admin]]></phrase>
+			<phrase name="setting_envolve_api_key_desc" date="1308378949" username="admin" version="1.0"><![CDATA[Your Envolve API key:<br /><br />
+Don't have an API key?<br />
+Get one at <a href="http://www.envolve.com/">http://www.envolve.com/</a>]]></phrase>
+			<phrase name="setting_envolve_display_to_desc" date="1308591003" username="admin" version="1.0"><![CDATA[Restrict these user groups e.g 1,3 etc]]></phrase>
+			<phrase name="setting_envolve_hide_chat_on_pages_desc" date="1308377138" username="admin" version="1.0"><![CDATA[Provide list of pages where you don't want to display envolve chat e.g forum.php,attachment.php etc etc]]></phrase>
+			<phrase name="setting_envolve_hide_chat_on_pages_title" date="1308377138" username="admin" version="1.0"><![CDATA[Restrict On]]></phrase>
+			<phrase name="setting_envolve_mobile_version_desc" date="1308591046" username="admin" version="1.0"><![CDATA[Enable/Disable chat on mobile site on vBulletin.]]></phrase>
+			<phrase name="setting_envolve_mobile_version_title" date="1308591046" username="admin" version="1.0"><![CDATA[Mobile Version]]></phrase>
+			<phrase name="setting_envolve_picture_for_desc" date="1308331695" username="admin" version="1.0"><![CDATA[It will use your forum avatar/profile picture for Envolve chat.]]></phrase>
+			<phrase name="setting_envolve_picture_for_title" date="1308331695" username="admin" version="1.0"><![CDATA[Show picture]]></phrase>
+			<phrase name="settinggroup_envolve_chat" date="0" username="" version=""><![CDATA[Envolve Chat]]></phrase>
+		</phrasetype>
+	</phrases>
+	<options>
+		<settinggroup name="envolve_chat" displayorder="65535">
+			<setting varname="envolve_api_key" displayorder="15">
+				<datatype>free</datatype>
+			</setting>
+			<setting varname="envolve_display_to" displayorder="30">
+				<datatype>free</datatype>
+				<defaultvalue>1,3</defaultvalue>
+			</setting>
+			<setting varname="envolve_picture_for" displayorder="40">
+				<datatype>free</datatype>
+				<optioncode>select:piped
+none|None
+avatar|Avatar
+profile_picture|Profile Picture</optioncode>
+				<defaultvalue>avatar</defaultvalue>
+			</setting>
+			<setting varname="envolve_admin" displayorder="50">
+				<datatype>free</datatype>
+				<defaultvalue>6,7</defaultvalue>
+			</setting>
+			<setting varname="envolve_hide_chat_on_pages" displayorder="60">
+				<datatype>free</datatype>
+				<defaultvalue>newattachment.php</defaultvalue>
+			</setting>
+			<setting varname="envolve_mobile_version" displayorder="70">
+				<datatype>free</datatype>
+				<optioncode>yesno</optioncode>
+				<defaultvalue>0</defaultvalue>
+			</setting>
+		</settinggroup>
+	</options>
+	<helptopics>
+	</helptopics>
+	<cronentries>
+	</cronentries>
+	<faqentries>
+	</faqentries>
+</product>

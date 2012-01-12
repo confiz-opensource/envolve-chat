@@ -1,0 +1,23 @@
+Installation Instructions
+
+First, Get Your Envolve API Key
+1. Log in or Sign Up for an Envolve account.
+2. Select your site from the list of "My Sites".
+3. Click the"Setup" tab on the left. Copy the code in the "Your API Key" box.
+
+Now, install plugin (on vB)
+1. Navigate to your Administrator Control Panel and login.
+2. Click "Plugins & Products" in the sidebar on the left. Then click "Manage Products".
+3. Click "Add/Import Product".
+4. Select and upload the "envolve_chat.xml" from the zip file you just downloaded.
+
+Finally, configure the plugin
+1. In your vBulletin Administrator Control Panel, click on "Settings" in the sidebar on the left. Then click "Options".
+Options
+
+2. Find "Envolve Chat" in the list of options. Select it and click "Edit Settings".
+3. Paste your Envolve API Key into the box.
+4. Customize the other settings as appropriate for your site.
+5. Click "Save".
+
+Now you can navigate to your site and start chatting. You're all done!
