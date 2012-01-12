@@ -6,6 +6,7 @@ First, Get Your Envolve API Key
 3. Click the"Setup" tab on the left. Copy the code in the "Your API Key" box.
 
 Now, install plugin (on vB)
+1. Copy files inside upload directory to the vB forums root.
 1. Navigate to your Administrator Control Panel and login.
 2. Click "Plugins & Products" in the sidebar on the left. Then click "Manage Products".
 3. Click "Add/Import Product".
